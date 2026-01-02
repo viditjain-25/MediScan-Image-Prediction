@@ -8,6 +8,9 @@ venv/
 # Jupyter
 .ipynb_checkpoints/
 
+
+.db
+.h5
 # OS / backup files
 .DS_Store
 *.bak
@@ -20,3 +23,5 @@ venv/
 .env
 
 node_modules/
+
+.DS_Store
