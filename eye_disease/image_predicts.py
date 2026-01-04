@@ -1,11 +1,14 @@
 import numpy as np
+import os
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import random as ra
 
 # Load model ONCE
-MODEL_PATH = r"eye_disease\best_eye_model.h5"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "best_eye_model.h5")
+
 model = load_model(MODEL_PATH)
 
 # Class names (must match training folders order)
