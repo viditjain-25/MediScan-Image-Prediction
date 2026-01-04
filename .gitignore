@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+.db
+.h5
+# OS / backup files
+.DS_Store
+*.bak
+*.log
+
+# CSV backups (optional)
+*.csv~
+
+# Secrets (if used later)
+.env
+
+node_modules/
+
+.DS_Store
