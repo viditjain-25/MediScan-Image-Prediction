@@ -1,11 +1,14 @@
 import pandas as pd
-
+import os
 
 
 # -----------------------------
 # Load CSV
 # -----------------------------
-df = pd.read_csv("eye_disease\eye_symptoms.csv")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CSV_PATH = os.path.join(BASE_DIR, "eye_symptoms.csv")
+
+df = pd.read_csv(CSV_PATH)
 
 # Create disease -> symptoms dictionary
 disease_symptoms = {}
