@@ -5,10 +5,10 @@ import pandas as pd
 conn = sqlite3.connect("mediscan.db")
 
 # Read all CSVs
-df_diseases = pd.read_csv("dataset.csv")
-df_precautions = pd.read_csv("symptom_precaution.csv")
-df_descriptions = pd.read_csv("symptom_Description.csv")
-df_severity = pd.read_csv("Symptom-severity.csv")
+df_diseases = pd.read_csv("D:\MediScannn\ML-API\dataset.csv")
+df_precautions = pd.read_csv("D:\MediScannn\ML-API\symptom_precaution.csv")
+df_descriptions = pd.read_csv("D:\MediScannn\ML-API\symptom_Description.csv")
+df_severity = pd.read_csv("D:\MediScannn\ML-API\Symptom-severity.csv")
 
 # Save each CSV as a table
 df_diseases.to_sql("diseases", conn, if_exists="replace", index=False)
